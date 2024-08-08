@@ -28,6 +28,12 @@ const searchQuery = (event) => {
     }
 
   };
+  const clickQuery = (query) => {
+   
+        navigate(`/search/${query}`)
+    
+
+  };
   return (
     
       <div className="heroBanner">
@@ -50,7 +56,7 @@ const searchQuery = (event) => {
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyUp={searchQuery}
               />
-              <button>Search</button>
+              <button onClick={()=>clickQuery(query)}>Search</button>
             </div>
           </div>
         
