@@ -3,13 +3,13 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import{fetchDataFromApi} from "./utils/api"
 import { useSelector, useDispatch } from 'react-redux'
 import { getApiConfigure ,getGenres} from './store/homeSlice'
-import Header from './components/header/header'
-import Footer from './components/footer/footer'
+import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
 import Home from './pages/home/home'
 import Details from './pages/details/details'
-import SearchResult from './pages/searchResult/searchResult'
-import Explore from './pages/explore/explore'
-import Error from './pages/404/error'
+import SearchResult from './pages/searchResult/SearchResult'
+import Explore from './pages/explore/Explore'
+import Error from './pages/404/Error'
 function App() {
   const dispatch = useDispatch()
   
